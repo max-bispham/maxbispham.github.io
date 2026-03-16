@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aisaiah Maguadog — Computer Engineer</title>
+  <title>Maxwell Bispham — Computer Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <style>
     :root {
-      --navy:       #0a1628;
-      --navy-mid:   #0f2040;
-      --navy-light: #1a3a6b;
-      --accent:     #4a9eff;
-      --accent-dim: #2a6ec4;
-      --gold:       #f0b429;
-      --white:      #f0f4ff;
-      --muted:      #8ba4c8;
-      --card-bg:    #0d1e38;
-      --border:     rgba(74, 158, 255, 0.15);
+      --navy:       #faf8f3;
+      --navy-mid:   #f0ebe0;
+      --navy-light: #e6dfd2;
+      --accent:     #4a7c59;
+      --accent-dim: #3a6649;
+      --gold:       #b5791e;
+      --white:      #1a2a1e;
+      --muted:      #6b8a72;
+      --card-bg:    #f5f0e6;
+      --border:     rgba(74, 124, 89, 0.2);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,7 +53,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.2rem 4rem;
-      background: rgba(10, 22, 40, 0.85);
+      background: rgba(250, 248, 243, 0.9);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
@@ -116,8 +116,8 @@
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(74,158,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(74,158,255,0.04) 1px, transparent 1px);
+        linear-gradient(rgba(106, 160, 120, 0.22) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(106, 160, 120, 0.22) 1px, transparent 1px);
       background-size: 60px 60px;
       pointer-events: none;
     }
@@ -128,7 +128,7 @@
       width: 600px;
       height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(74,158,255,0.12) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(74,222,128,0.12) 0%, transparent 70%);
       top: -100px;
       right: -100px;
       pointer-events: none;
@@ -162,8 +162,8 @@
       object-fit: cover;
       object-position: center 15%;
       border-radius: 16px;
-      border: 2px solid rgba(74, 158, 255, 0.3);
-      box-shadow: 0 0 40px rgba(74, 158, 255, 0.15);
+      border: 2px solid rgba(74, 222, 128, 0.3);
+      box-shadow: 0 0 40px rgba(74, 222, 128, 0.15);
       display: block;
       animation: fadeUp 0.6s 0.5s ease both;
     }
@@ -232,7 +232,7 @@
     }
 
     .btn-primary:hover {
-      background: #6ab4ff;
+      background: #86efac;
       transform: translateY(-2px);
     }
 
@@ -430,7 +430,7 @@
     }
 
     .project-card:hover {
-      border-color: rgba(74,158,255,0.4);
+      border-color: rgba(74,222,128,0.4);
       transform: translateY(-4px);
     }
 
@@ -473,8 +473,8 @@
     .tag {
       font-size: 0.72rem;
       padding: 0.25rem 0.65rem;
-      background: rgba(74,158,255,0.08);
-      border: 1px solid rgba(74,158,255,0.15);
+      background: rgba(74,222,128,0.08);
+      border: 1px solid rgba(74,222,128,0.15);
       border-radius: 2rem;
       color: var(--accent);
       letter-spacing: 0.04em;
@@ -574,23 +574,10 @@
       color: var(--accent);
     }
 
-    .lead-ig {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      margin-top: 0.5rem;
+    .lead-date {
       font-size: 0.75rem;
       color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .lead-ig:hover { color: var(--white); }
-
-    .lead-ig svg {
-      width: 12px;
-      height: 12px;
-      flex-shrink: 0;
+      margin-top: 0.4rem;
     }
 
     /* ── CONTACT ── */
@@ -639,7 +626,7 @@
     @media (max-width: 768px) {
       .hero-inner { grid-template-columns: 1fr; gap: 1.5rem; justify-items: center; }
       .hero-content { width: 100%; }
-      .hero-photo { order: -1; width: 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(74,158,255,0.3); box-shadow: 0 0 40px rgba(74,158,255,0.15); flex-shrink: 0; }
+      .hero-photo { order: -1; width: 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(74,222,128,0.3); box-shadow: 0 0 40px rgba(74,222,128,0.15); flex-shrink: 0; }
       .headshot { width: 160px; height: 160px; border-radius: 0; border: none; box-shadow: none; object-position: center 15%; transform: scale(1.9); transform-origin: center 18%; }
       .hero-ctas { flex-direction: column; width: 100%; align-items: stretch; }
       .btn { justify-content: center; }
@@ -661,7 +648,7 @@
 
   <!-- NAV -->
   <nav>
-    <a class="nav-logo" href="#hero">AM</a>
+    <a class="nav-logo" href="#hero">MB</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -679,38 +666,38 @@
     <div class="hero-content">
       <span class="hero-tag">Computer Engineering · LMU '27</span>
       <h1>
-        Aisaiah<br>
-        <span class="line2">Maguadog</span>
+        Maxwell<br>
+        <span class="line2">Bispham</span>
       </h1>
       <p class="hero-sub">
-        I believe engineering is most powerful when it solves real problems for real people. From discrete BJT amplifiers to autonomous robots and FPGA-based CPU design, I build at the intersection of hardware and software to create technology that matters.
+        I build at the intersection of hardware and software — from bare-metal STM32 firmware and Linux kernel modules to embedded systems and full-stack tooling. I love making electronics do something real.
       </p>
       <div class="hero-ctas">
-        <a href="https://www.linkedin.com/in/aisaiahmaguadog" target="_blank" class="btn btn-primary">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/mbispham" target="_blank" class="btn btn-primary">LinkedIn</a>
         <a href="#projects" class="btn btn-outline">View Projects</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
       <div class="hero-stats">
         <div>
-          <div class="stat-num">4+</div>
-          <div class="stat-label">Years at Apple</div>
+          <div class="stat-num">3.99</div>
+          <div class="stat-label">GPA</div>
+        </div>
+        <div>
+          <div class="stat-num">2</div>
+          <div class="stat-label">Internships</div>
         </div>
         <div>
           <div class="stat-num">2</div>
           <div class="stat-label">Leadership Roles</div>
         </div>
         <div>
-          <div class="stat-num">7</div>
-          <div class="stat-label">Languages</div>
-        </div>
-        <div>
-          <div class="stat-num">1st</div>
-          <div class="stat-label">NSBE Hackathon</div>
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Embedded Projects</div>
         </div>
       </div>
     </div>
     <div class="hero-photo">
-      <img src="headshot.jpeg" alt="Aisaiah Maguadog" class="headshot">
+      <img src="Headshot.jpeg" alt="Maxwell Bispham" class="headshot">
     </div>
     </div>
   </section>
@@ -720,10 +707,10 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p class="section-label">About Me</p>
-        <h2>Engineer.<br>Leader.<br>Problem-Solver.</h2>
-        <p>I'm a Computer Engineering student at <strong>Loyola Marymount University</strong> driven by one goal: using technology to solve problems that matter. I love working at every level of the stack, from transistor-level circuit design to robot software architecture, because I believe the best engineers understand the full picture. Passionate about <strong>VLSI</strong> and chip design.</p>
-        <p>As Co-President of the LMU Robotics club, <strong>IEEE</strong> Outreach/Networking Chair, and active member of <strong>NSBE</strong>, I'm constantly bridging the gap between classroom theory and real-world impact, whether that's leading our <strong>NASA Lunabotics</strong> competition team or connecting engineers across campus.</p>
-        <p>Outside of engineering I'm into traveling, trying new foods, learning guitar, and basketball.</p>
+        <h2>Engineer.<br>Builder.<br>Problem-Solver.</h2>
+        <p>I'm a <strong>Computer Engineering</strong> student at Loyola Marymount University with a deep interest in embedded systems, firmware, and low-level software. I enjoy working close to the hardware — writing bare-metal C, designing drivers, and building things that interact with the physical world.</p>
+        <p>From programming <strong>STM32 microcontrollers</strong> and writing Linux kernel modules to leading electronics teams and automating engineering workflows, I look for every opportunity to turn ideas into real, working systems.</p>
+        <p>Outside of engineering I'm into hiking, photography, and tinkering with whatever hardware is on my bench.</p>
       </div>
       <div class="about-details reveal">
         <div class="detail-row">
@@ -737,28 +724,28 @@
           <span class="detail-icon">📍</span>
           <div class="detail-info">
             <small>Location</small>
-            <span>El Segundo, CA</span>
+            <span>Los Angeles, CA</span>
           </div>
         </div>
         <div class="detail-row">
-          <span class="detail-icon">💼</span>
+          <span class="detail-icon">🏆</span>
           <div class="detail-info">
-            <small>Current Role</small>
-            <span>Product Specialist @ Apple</span>
+            <small>Honors</small>
+            <span>Tau Beta Pi · Presidential Scholarship · Dean's List</span>
           </div>
         </div>
         <div class="detail-row">
           <span class="detail-icon">🚀</span>
           <div class="detail-info">
             <small>Interests</small>
-            <span>VLSI, Chip Design, Embedded Systems, Robotics</span>
+            <span>Embedded Systems, Firmware, Linux, Microcontrollers</span>
           </div>
         </div>
         <div class="detail-row">
           <span class="detail-icon">📧</span>
           <div class="detail-info">
             <small>Email</small>
-            <span>aisaiah.maguadog@gmail.com</span>
+            <span>max.bispham@gmail.com</span>
           </div>
         </div>
       </div>
@@ -772,35 +759,27 @@
     <div class="skills-grid">
       <div class="skill-card reveal">
         <div class="skill-card-title">Programming Languages</div>
-        <p>C, C++, Python, ARM/MIPS Assembly</p>
+        <p>C, Python, ARM Assembly</p>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-card-title">Hardware Description Languages (HDL)</div>
-        <p>Verilog, SystemVerilog, VHDL</p>
+        <div class="skill-card-title">Embedded & RTOS</div>
+        <p>STM32, Arduino, Raspberry Pi, FreeRTOS, bare-metal firmware, microcontroller subsystem design</p>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-card-title">Electrical & Digital Systems</div>
-        <p>Circuit design & analysis, digital logic, BJT/FET amplifiers, differential & operational amplifiers, feedback & compensation, FPGA-based FSM design</p>
+        <div class="skill-card-title">Communication Protocols</div>
+        <p>I²C, UART, SPI, PWM — driver implementation and hardware interfacing</p>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-card-title">CPU & Hardware Design</div>
-        <p>MIPS processor design in SystemVerilog/Verilog, ALU & sorting network implementation, datapath & control unit design, Vivado FPGA toolchain</p>
+        <div class="skill-card-title">Linux & Systems</div>
+        <p>Linux kernel module development, cross-compilation, GitHub Actions CI/CD, static analysis (ClangSA, ESLint), Ubuntu/Linux administration</p>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-card-title">Signals & Systems</div>
-        <p>Laplace/Z-transform, Fourier series/transforms, convolution, LTI system realizations, sampling theorem, amplitude/angle modulation</p>
+        <div class="skill-card-title">Robotics & Tools</div>
+        <p>ROS2, LabVIEW, Adobe Fusion, Multisim, oscilloscope, signal generators</p>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-card-title">Data Structures & Algorithms</div>
-        <p>Arrays, linked lists, stacks, queues, heaps, hash tables, trees, graphs; time/space complexity; Python OOP; GitHub version control</p>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-card-title">Embedded Systems</div>
-        <p>ARM/MIPS assembly, microarchitecture, memory systems, I/O interfacing, microcontroller subroutine design, C for hardware, Arduino, Raspberry Pi, ROS 2, Ubuntu/Linux</p>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-card-title">Lab & Simulation Tools</div>
-        <p>Multisim, LabVIEW, oscilloscope, Vivado, SolidWorks, signal generators, NVIDIA Jetson Orin Nano</p>
+        <div class="skill-card-title">Dev & Collaboration</div>
+        <p>Git, documentation writing, system administration, Azure VMs, WDS server deployment</p>
       </div>
     </div>
   </section>
@@ -808,100 +787,47 @@
   <!-- PROJECTS -->
   <section id="projects">
     <p class="section-label reveal">Projects</p>
-    <h2 class="reveal">Projects</h2>
+    <h2 class="reveal">Things I've Built</h2>
     <div class="projects-grid">
 
       <div class="project-card reveal">
-        <span class="project-badge">In Progress · 2025–26</span>
-        <h3>NASA Lunabotics — Autonomous Mining Robot</h3>
-        <p>Controls Team Lead for LMU's NASA Lunabotics entry. Managing combined software/firmware team, overseeing task delegation and project milestones. Integrating NVIDIA Jetson Orin Nano with Teensy microcontroller and setting up ROS 2 on Ubuntu/Linux for robot software architecture.</p>
+        <span class="project-badge">Personal Project · Feb 2026</span>
+        <h3>Linux Kernel Module Development</h3>
+        <p>Developed an out-of-tree Linux kernel module in C targeting a Raspberry Pi, implementing module initialization and cleanup lifecycle using kernel module APIs. Configured a custom Makefile for cross-compilation and verified dynamic loading via insmod/rmmod. Used printk for kernel-space debug logging observed through dmesg.</p>
         <div class="project-tags">
-          <span class="tag">ROS 2</span>
-          <span class="tag">NVIDIA Jetson</span>
-          <span class="tag">Teensy</span>
-          <span class="tag">Ubuntu/Linux</span>
-          <span class="tag">Team Lead</span>
+          <span class="tag">C</span>
+          <span class="tag">Linux Kernel</span>
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">Cross-Compilation</span>
+          <span class="tag">Makefile</span>
         </div>
       </div>
 
       <div class="project-card reveal">
-        <span class="project-badge">In Progress · 2026</span>
-        <h3>SWIFT Algorithm — FPGA HDL Implementation</h3>
-        <p>Converting a C implementation of the Sliding Window Infinite Fourier Transform (SWIFT) algorithm to synthesizable SystemVerilog for real-time signal processing on a Xilinx UltraScale+ ZCU102 FPGA. Part of an Idaho National Laboratory-sponsored capstone project at LMU targeting 1 Hz spectral resolution at 14 Ms/s.</p>
+        <span class="project-badge">Personal Project · Dec 2025</span>
+        <h3>STM32 Handheld Game Console</h3>
+        <p>Designed and programmed a bare-metal firmware architecture for an STM32F103 handheld game console in C, implementing modular subsystems for input, display, timing, audio, and scene management. Built an EXTI-interrupt-driven input system with debouncing, a 1 KB bit-addressable framebuffer, and a custom SSD1306 OLED driver over I²C.</p>
         <div class="project-tags">
-          <span class="tag">SystemVerilog</span>
-          <span class="tag">Verilog</span>
-          <span class="tag">Vivado</span>
-          <span class="tag">ZCU102</span>
-          <span class="tag">FPGA</span>
-          <span class="tag">Signal Processing</span>
-          <span class="tag">SWIFT</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <span class="project-badge">CPU Design · 2026</span>
-        <h3>32-bit ALU — Single Cycle CPU Design</h3>
-        <p>Designed and implemented a 32-bit Arithmetic Logic Unit in SystemVerilog and Verilog as part of a single-cycle CPU design. Supported operations include addition, subtraction, logical shifts (left/right), and bitwise operations (AND, OR, XOR, NOT) with proper flag outputs (N, Z, C, V). Wrote a full Verilog testbench to verify correct functionality across all supported operations.</p>
-        <div class="project-tags">
-          <span class="tag">SystemVerilog</span>
-          <span class="tag">Verilog</span>
-          <span class="tag">Vivado</span>
-          <span class="tag">ALU</span>
-          <span class="tag">CPU Design</span>
-          <span class="tag">Testbench</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <span class="project-badge">Analog IC Design · 2026</span>
-        <h3>Discrete BJT Operational Amplifier</h3>
-        <p>Designed and built a two-stage discrete op-amp using CA3046 NPN transistor array and MPSA-13 Darlington pair, meeting all specs (gain 400–500, Rid ≥ 20kΩ, Ro ≤ 200Ω). Applied Miller compensation for stability and designed an inverting amplifier configuration. Full flow: hand calculations → MultiSim simulation → hardware validation.</p>
-        <div class="project-tags">
-          <span class="tag">CA3046</span>
-          <span class="tag">Darlington</span>
-          <span class="tag">MultiSim</span>
-          <span class="tag">Miller Compensation</span>
-          <span class="tag">Bode Plots</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <span class="project-badge">Engineering Tool · 2026</span>
-        <h3>BJT Amplifier Design-Space Explorer</h3>
-        <p>Built a custom Python tool to automate BJT amplifier design-space exploration for lab use. Given target specifications, the tool sweeps component values and calculates gain, input/output impedance, and bias point across hundreds of configurations, dramatically speeding up the design process. A practical example of using software to solve a real hardware engineering problem.</p>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">BJT</span>
-          <span class="tag">Analog Design</span>
-          <span class="tag">Automation</span>
-          <span class="tag">Engineering Tool</span>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <span class="project-badge">🏆 1st Place · LMU Hackathon</span>
-        <h3>Interactive Learning Board</h3>
-        <p>Designed an educational analog/digital circuit board demonstrating real-time behavior of bridge rectifiers, resistors, diodes, and capacitors. Implemented Arduino-based measurement system with I²C OLED display. 3D-printed custom enclosure.</p>
-        <div class="project-tags">
-          <span class="tag">Arduino</span>
+          <span class="tag">STM32</span>
+          <span class="tag">C</span>
+          <span class="tag">Bare-Metal</span>
           <span class="tag">I²C</span>
-          <span class="tag">OLED</span>
-          <span class="tag">3D Printing</span>
-          <span class="tag">Analog Circuits</span>
+          <span class="tag">SSD1306</span>
+          <span class="tag">EXTI Interrupts</span>
         </div>
       </div>
 
       <div class="project-card reveal">
-        <span class="project-badge">AI & Software · 2025</span>
-        <h3>AI Travel Agent — Japan Trip Planner</h3>
-        <p>Built a Python-based AI travel agent to plan a trip to Japan. Features include automated flight search, itinerary generation, and Chase Ultimate Rewards points optimization to minimize out-of-pocket costs. A practical application of AI tooling and API integration to solve a real-world planning problem.</p>
+        <span class="project-badge">Personal Project · Sep 2025</span>
+        <h3>STM32 Weather Station</h3>
+        <p>Developed embedded C firmware for an STM32 Nucleo-L476RG to acquire data from SHT30 and MMC5603NJ sensors over I²C and display real-time readings on an SSD1306 OLED. Built a FreeRTOS multitasking system to manage sensor reads, data processing, and real-time display updates concurrently.</p>
         <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">AI</span>
-          <span class="tag">API Integration</span>
-          <span class="tag">Chase Points</span>
-          <span class="tag">Travel Automation</span>
+          <span class="tag">STM32</span>
+          <span class="tag">FreeRTOS</span>
+          <span class="tag">C</span>
+          <span class="tag">I²C</span>
+          <span class="tag">SHT30</span>
+          <span class="tag">OLED</span>
         </div>
       </div>
 
@@ -915,15 +841,26 @@
 
     <div class="exp-card reveal">
       <div>
-        <div class="exp-title">Product Specialist</div>
-        <div class="exp-company">Apple, Inc. — Manhattan Beach, CA</div>
+        <div class="exp-title">Engineering Intern</div>
+        <div class="exp-company">Expedium Consulting — Minneapolis, MN</div>
         <ul class="exp-bullets">
-          <li>Diagnose and resolve hardware/software issues across macOS, iOS, iPadOS, visionOS, and watchOS using systematic troubleshooting and root-cause analysis</li>
-          <li>Translate complex technical concepts into clear explanations for non-technical users, strengthening cross-functional communication skills</li>
-          <li>Share technical insights with peers to foster teamwork and efficiency; rapidly adapt to evolving Apple technologies and system architectures</li>
+          <li>Implemented a Python script that automatically updated the parts database daily, detected components requiring redesign, and generated automated BOMs for each assembly</li>
+          <li>Built a Linux-based GitHub Actions workflow for static code analysis using ClangSA and ESLint, identifying 600+ issues across C, C++, and JavaScript</li>
         </ul>
       </div>
-      <div class="exp-date">Aug 2021 — Present</div>
+      <div class="exp-date">June 2025 — August 2025</div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div>
+        <div class="exp-title">System Administrator Intern</div>
+        <div class="exp-company">University of Washington School of Dentistry — Seattle, WA</div>
+        <ul class="exp-bullets">
+          <li>Installed asset management website on an Ubuntu VM overseeing 3,000+ computers, VMs, and software instances</li>
+          <li>Built and deployed a WDS server for a new campus, sourcing images from Azure VM for 20+ workstations</li>
+        </ul>
+      </div>
+      <div class="exp-date">May 2024 — August 2024</div>
     </div>
   </section>
 
@@ -933,32 +870,16 @@
     <h2 class="reveal">Campus Involvement</h2>
     <div class="leadership-grid">
       <div class="lead-card reveal">
-        <div class="lead-role">Co-President & Controls Team Lead</div>
-        <div class="lead-org">LMU Robotics Optimization and Building Organization (ROBO)</div>
-        <a href="https://www.instagram.com/lmurobotics" target="_blank" class="lead-ig">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <circle cx="12" cy="12" r="4"/>
-            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
-          </svg>
-          @lmurobotics
-        </a>
+        <div class="lead-role">Electronics Team Lead</div>
+        <div class="lead-org">Formula FSAE Club — LMU</div>
+        <div class="lead-date">September 2025 — Present</div>
+        <p style="font-size:0.82rem; color:var(--muted); margin-top:0.6rem;">Designed the formula car electrical schematic and wiring harness systems, securing $1,700 in university funding. Leading a team of 7 in research and design of the electrical system for the Formula SAE vehicle.</p>
       </div>
       <div class="lead-card reveal">
-        <div class="lead-role">Outreach/Networking Chair</div>
-        <div class="lead-org">Institute of Electrical and Electronics Engineers (IEEE) — LMU Chapter</div>
-        <a href="https://www.instagram.com/lmuieee" target="_blank" class="lead-ig">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <circle cx="12" cy="12" r="4"/>
-            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
-          </svg>
-          @lmuieee
-        </a>
-      </div>
-      <div class="lead-card reveal">
-        <div class="lead-role">Collegiate Member</div>
-        <div class="lead-org">National Society of Black Engineers (NSBE)</div>
+        <div class="lead-role">Co-President / Firmware Team Lead</div>
+        <div class="lead-org">Robotics Club — LMU</div>
+        <div class="lead-date">May 2025 — December 2025</div>
+        <p style="font-size:0.82rem; color:var(--muted); margin-top:0.6rem;">Implemented IR sensor firmware using software interrupts for precise object detection. Led multiple lectures on C fundamentals and PWM for servos to a team of 8 students.</p>
       </div>
     </div>
   </section>
@@ -968,17 +889,16 @@
     <p class="section-label reveal">Contact</p>
     <h2 class="reveal">Let's Connect</h2>
     <p class="reveal" style="color: var(--muted); max-width: 480px; margin: 0 auto 2rem;">
-      I'm actively looking for internship opportunities in embedded systems, hardware engineering, and VLSI. Feel free to reach out.
+      I'm actively looking for internship opportunities in embedded systems, firmware engineering, and hardware development. Feel free to reach out.
     </p>
     <div class="contact-links reveal">
-      <a href="mailto:aisaiah.maguadog@gmail.com" class="btn btn-primary">Email Me</a>
-      <a href="https://www.linkedin.com/in/aisaiahmaguadog" target="_blank" class="btn btn-outline">LinkedIn</a>
-      <a href="https://github.com/aisaiahmaguadog" target="_blank" class="btn btn-outline">GitHub</a>
+      <a href="mailto:max.bispham@gmail.com" class="btn btn-primary">Email Me</a>
+      <a href="https://www.linkedin.com/in/mbispham" target="_blank" class="btn btn-outline">LinkedIn</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Aisaiah Maguadog · El Segundo, CA</p>
+    <p>© 2026 Maxwell Bispham · Los Angeles, CA</p>
   </footer>
 
   <script>
