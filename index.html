@@ -404,6 +404,7 @@
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 1.5rem;
       max-width: 1100px;
+      margin: 0 auto;
     }
 
     .project-card {
@@ -478,6 +479,16 @@
       border-radius: 2rem;
       color: var(--accent);
       letter-spacing: 0.04em;
+    }
+
+    .project-card code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      background: rgba(74, 124, 89, 0.1);
+      border: 1px solid rgba(74, 124, 89, 0.2);
+      border-radius: 3px;
+      padding: 0.1em 0.4em;
+      color: var(--accent);
     }
 
     /* ── EXPERIENCE ── */
@@ -792,14 +803,17 @@
 
       <div class="project-card reveal">
         <span class="project-badge">Personal Project · Feb 2026</span>
-        <h3>Linux Kernel Module Development</h3>
-        <p>Developed an out-of-tree Linux kernel module in C targeting a Raspberry Pi, implementing module initialization and cleanup lifecycle using kernel module APIs. Configured a custom Makefile for cross-compilation and verified dynamic loading via insmod/rmmod. Used printk for kernel-space debug logging observed through dmesg.</p>
+        <h3>Linux I²C Kernel Driver — SHT30 Sensor</h3>
+        <p>Wrote a real, functional Linux kernel module in C from scratch targeting a Raspberry Pi on kernel 6.12.62, implementing a complete I²C character device driver for an Adafruit SHT30 temperature and humidity sensor. Combined two kernel subsystems in a single module: the I²C driver subsystem handles hardware matching via device tree and calls the driver's probe function to initialize the sensor, while the character device subsystem exposes a <code>/dev/sht30</code> interface that userspace can read with standard Unix I/O.</p>
+        <p>Wrote a DTS device tree overlay compiled with dtc and loaded dynamically at runtime to describe the SHT30 at I²C address 0x44 on the Pi's I2C1 bus. Used of_match_table for device tree-based matching. The probe function validates sensor presence by querying its status register over raw I²C before registering the character device. Read calls trigger a measurement command via i2c_master_send, wait 15ms, then retrieve 6 bytes of raw data with i2c_master_recv. Raw 16-bit values are passed to userspace with copy_to_user, keeping data conversion in a userspace test application per the Linux "mechanism not policy" philosophy. Used devm_kzalloc for kernel memory allocation and file->private_data for per-open device state.</p>
         <div class="project-tags">
           <span class="tag">C</span>
           <span class="tag">Linux Kernel</span>
+          <span class="tag">I²C Driver</span>
+          <span class="tag">Character Device</span>
+          <span class="tag">Device Tree</span>
           <span class="tag">Raspberry Pi</span>
-          <span class="tag">Cross-Compilation</span>
-          <span class="tag">Makefile</span>
+          <span class="tag">copy_to_user</span>
         </div>
       </div>
 
@@ -828,6 +842,20 @@
           <span class="tag">I²C</span>
           <span class="tag">SHT30</span>
           <span class="tag">OLED</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-badge">Formula FSAE · 2025–Present</span>
+        <h3>FSAE Vehicle Wiring Harness</h3>
+        <p>Designed the complete wiring architecture from scratch for LMU's Formula SAE car, integrating a Honda CBR600RR engine with a Haltech Elite 1500 ECU. Broke the system into three purpose-built sub-harnesses: a front harness serving cockpit sensors and dashboard, a rear harness driving cooling fans, fuel system, and pneumatic shifter, and an engine harness routing all powertrain sensors and actuators. Sensor suite includes coolant temp, MAP, throttle position, oil pressure, and neutral switch. Routed harnesses to avoid exhaust heat, and applied shielded cabling for the knock sensor to prevent EMI-induced signal noise. Designed FSAE-compliant shutdown circuit and a dual master-switch ignition system with cockpit override. Used RapidHarness to produce the full 60+ wire schematic. Design was awarded $1,700 in university funding.</p>
+        <div class="project-tags">
+          <span class="tag">RapidHarness</span>
+          <span class="tag">Haltech Elite 1500</span>
+          <span class="tag">CBR600RR</span>
+          <span class="tag">Wiring Schematic</span>
+          <span class="tag">EMI Shielding</span>
+          <span class="tag">FSAE</span>
         </div>
       </div>
 
